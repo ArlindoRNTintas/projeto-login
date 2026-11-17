@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@media screen and (min-width: 786px) {
+  :root {
+    --degradê: var(--azul), var(--azulclaro);
+  }
+  body {
+    background-image: linear-gradient(180deg, var(--degradê));
+  }
+  main {
+    min-width: 786px;
+    max-width: 900px;
+    box-shadow: 1px 1px 10px #0000006d;
+  }
+  #logo {
+    width: 30vw;
+  }
+  section > div {
+    display: inline-block;
+  }
+  .divform {
+    display: block;
+  }
+}
+@media screen and (min-width: 1080px) {
+  #logo {
+    width: 20vw;
+  }
+}

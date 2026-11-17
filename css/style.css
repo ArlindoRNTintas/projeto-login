@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "AmsiPro";
+  src: url(../fonts/AmsiProNormal-Regular.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AmsiPro";
+  src: url(../fonts/AmsiProNormal-Bold.woff2) format(woff2);
+  font-weight: bold;
+  font-style: normal;
+}
+:root {
+  --amsi: "AmsiPro", Arial, Helvetica, sans-serif;
+  --azul: #214288;
+  --azulclaro: #5685e9;
+  --laranja: #fd5c04;
+  --vermelho: #e30613;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--amsi);
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  background-color: var(--azul);
+  position: fixed;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70vw;
+  text-align: center;
+}
+#logo {
+  width: 50vw;
+  margin: 2vh auto;
+  position: relative;
+  vertical-align: middle;
+}
+#divtexto {
+  position: relative;
+  vertical-align: middle;
+}
+h1,
+p,
+legend,
+.botão {
+  margin-bottom: 2vh;
+}
+.divform {
+  display: inline-block;
+  background-color: var(--laranja);
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+}
+label:hover {
+  cursor: pointer;
+}
+.caixa {
+  background-color: lightgray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 8px 0;
+}
+.caixa:focus {
+  background-color: white;
+}
+.botão {
+  display: block;
+  margin: auto;
+}
+.botão:hover {
+  cursor: pointer;
+  background-color: var(--laranja);
+  color: white;
+}
