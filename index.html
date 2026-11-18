@@ -15,18 +15,18 @@
     <main>
       <section>
         <div id="logo">
-            <picture>
-              <source
-                media="(max-width: 786px)"
-                srcset="imgs/logowide.svg"
-                type="image/svg+xml"
-              />
-              <img
-                src="imgs/logosquare.svg"
-                alt="Arlindo RN Tintas"
-                type="image/svg+xml"
-              />
-            </picture>
+          <picture>
+            <source
+              media="(max-width: 786px)"
+              srcset="imgs/logowide.svg"
+              type="image/svg+xml"
+            />
+            <img
+              src="imgs/logosquare.svg"
+              alt="Arlindo RN Tintas"
+              type="image/svg+xml"
+            />
+          </picture>
         </div>
         <div id="divtexto">
           <h1>Login</h1>
@@ -48,6 +48,8 @@
                   autocomplete="username"
                   required
                   placeholder="  Seu Nome de Usuário"
+                  minlength="6"
+                  maxlength="20"
                 />
               </div>
               <div class="divform">
@@ -62,10 +64,12 @@
                   autocomplete="current-password"
                   required
                   placeholder="  Sua Senha"
+                  minlength="6"
+                  maxlength="20"
                 />
               </div>
             </fieldset>
-            <input type="submit" value="Enviar" class="botão" />
+            <input type="submit" value="Enviar"/>
           </form>
         </div>
       </section>
