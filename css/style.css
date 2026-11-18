@@ -43,8 +43,10 @@ main {
   border-radius: 10px;
   width: 70vw;
   text-align: center;
+  transition: width .3s, height .3s;
+  transition-timing-function: ease;
 }
-#logo {
+ #logo {
   width: 50vw;
   margin: 2vh auto;
   position: relative;
@@ -70,6 +72,14 @@ legend,
 label:hover {
   cursor: pointer;
 }
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  font-size: 7cqh;
+}
 .caixa {
   background-color: lightgray;
   border-style: solid;
@@ -78,6 +88,14 @@ label:hover {
 }
 .caixa:focus {
   background-color: white;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.caixa {
+  display: inline-block;
+  height: 7cqh;
 }
 .botão {
   display: block;

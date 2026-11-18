@@ -7,22 +7,35 @@
     background-image: linear-gradient(180deg, var(--degradê));
   }
   main {
-    min-width: 786px;
+    min-width: 700px;
     max-width: 900px;
     box-shadow: 1px 1px 10px #0000006d;
-  }
-  #logo {
-    width: 30vw;
   }
   section > div {
     display: inline-block;
   }
+  #logo {
+    float: left;
+    width: 30%;
+  }
+  #divtexto {
+    float: right;
+    width: 70%;
+  }
   .divform {
     display: block;
+  }
+  .caixa {
+    width: calc(100% - 8cqh);
   }
 }
 @media screen and (min-width: 1080px) {
   #logo {
-    width: 20vw;
+    float: right;
+    width: 40%;
+  }
+  #divtexto {
+    float: left;
+    width: 60%;
   }
 }
